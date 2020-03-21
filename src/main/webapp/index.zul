@@ -1,0 +1,8 @@
+<zk>
+	<window apply="org.zkoss.bind.BindComposer"
+		viewModel="@id('vm')@init('com.augustoangelo.LoginMaven.bemVindo')"
+		validationMessages="@id('vmsgs')">
+		<button label="add" onClick="@command('cmd')"/>
+		<button label="Login" href="/paginas/login.zul"/>
+	</window>
+</zk>

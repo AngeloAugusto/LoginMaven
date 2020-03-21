@@ -1,0 +1,40 @@
+<?page title="Login" contentType="text/html;charset=UTF-8"?>
+<zk>
+	<window title="Login" border="normal"
+		viewModel="@id('vm')@init('com.augustoangelo.LoginMaven.login')"
+		validationMessages="@id('vmsgs')"
+		apply="com.augustoangelo.LoginMaven.login">
+		<grid zclass="none">
+			<columns>
+				<column style="background: #f05e23;color: #ffffff;">
+					<label id="tit"
+						style="font-weight:bold;font-size:30pt" value="Login"
+						width="100px" />
+				</column>
+				<column style="background: #f05e23;"></column>
+			</columns>
+			<rows>
+				<row>
+					<label id="lb1"
+						style="font-weight:bold;font-size:15pt" value="Utilizador:" />
+					<textbox id="user" width="150px" height="30px"
+						style="font-size:12pt" />
+				</row>
+				<row>
+					<label id="lb2"
+						style="font-weight:bold;font-size:15pt" value="Password:" />
+					<textbox id="pass" type="password" width="150px"
+						height="30px" style="font-size:12pt" />
+				</row>
+				<row>
+					<cell colspan="2" align="center">
+						<button label="Login" id="login"
+							style="font-weight:bold;font-size:13 pt;background: #f05e23;color: #ffffff"
+							width="200px" height="40px">
+						</button>
+					</cell>
+				</row>
+			</rows>
+		</grid>
+	</window>
+</zk>
